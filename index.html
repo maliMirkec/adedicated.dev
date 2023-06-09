@@ -9,7 +9,7 @@
 <body>
   <header class="top">
     <a href="/">
-      <img src="logo.svg" alt="Home" width="480" height="160">
+      <img src="logo.svg" alt="Home" width="299" height="45">
     </a>
     <nav role="Main">
       <ul>
@@ -41,7 +41,7 @@
       <h2>How it works</h2>
       <ol>
         <li>Create a request.</li>
-        <li>Brake the request into smaller tasks.</li>
+        <li>Split the request into smaller tasks.</li>
         <li>Relax and see every task resolved in a timely fashion.</li>
       </ol>
       <img srcset="how-it-works-2x.png 2x, how-it-works.png" src="how-it-works.png" alt="Illustration showing two persons in front of a big monitor. The first person is touching a big “plus” sign. The other person is holding an item which could be related to other two items on the screen. Altoghether seems like they are work on a tasks list.">
@@ -163,7 +163,7 @@
           </ul>
         </li>
         <li>
-          <h3>1-month package</h3>
+          <h3>6-month package</h3>
           <p>When you cannot commit for a period longer than six months. <br>You save $500 each month.</p>
           <h4>$3,499/m</h4>
           <a class="button button--alpha" href="#get-started">Get started</a>
@@ -257,123 +257,13 @@
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="bottom">
     <p>&copy; 2023, A Dedicated Dev; Osijek, Croatia</p>
+    <a href="/">
+      <img src="logo.svg" alt="Home" width="299" height="45">
+    </a>
   </footer>
   <style id="services-style"></style>
-  <script>
-  const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  const highlightRandomServices = ($s, c) => {
-    const nth1 = [1, 4, 7, 10, 13]
-    const nth2 = [2, 5, 8, 11, 14]
-    const nth3 = [3, 6, 9, 12, 15]
-    let c1 = getRandomNumber(1, 5)
-    let c2 = getRandomNumber(1, 5)
-    let c3 = getRandomNumber(1, 5)
-
-    if(c && nth1.indexOf(c) !== -1) {
-      c1 = nth1.indexOf(c) + 1
-    }
-
-    if(c && nth2.indexOf(c) !== -1) {
-      c2 = nth2.indexOf(c) + 1
-    }
-
-    if(c && nth3.indexOf(c) !== -1) {
-      c3 = nth3.indexOf(c) + 1
-    }
-
-    $s.setAttribute('data-col1', c1)
-    $s.setAttribute('data-col2', c2)
-    $s.setAttribute('data-col3', c3)
-
-    $ss.innerHTML = `
-      .services[data-col1="${c1}"][data-col2="${c2}"] li:nth-child(${nth1[c1 - 1]}):before {
-        content: "";
-        position: absolute;
-        left: 100%;
-        ${c2 - c1 < 0 ? 'bottom: calc(50% + 2px);': 'top: calc(50% + 2px);'}
-        ${c2 - c1 < 0 ? 'border-bottom: 4px solid var(--color-omega);': 'border-top: 4px solid var(--color-omega);'}
-        border-right: 4px solid var(--color-omega);
-        ${c2 - c1 < 0 ? 'border-bottom-right-radius: var(--brad-beta);': 'border-top-right-radius: var(--brad-beta);'}
-        min-block-size: calc(((100% * ${Math.abs(c2 - c1)}) + (var(--gap-gamma) * ${Math.abs(c2 - c1)})) / 2);
-        min-inline-size: calc(var(--gap-delta) - 2px);
-        translate: 0 -2px;
-      }
-
-      .services[data-col1="${c1}"][data-col2="${c2}"] li:nth-child(${nth1[c1 - 1]}):after {
-        content: "";
-        position: absolute;
-        left: 100%;
-        ${c2 - c1 < 0 ? 'bottom: 50%;': 'top: 50%;'}
-        ${c2 - c1 < 0 ? 'border-top: 4px solid var(--color-omega);': 'border-bottom: 4px solid var(--color-omega);'}
-        border-left: 4px solid var(--color-omega);
-        ${c2 - c1 < 0 ? 'border-top-left-radius: var(--brad-beta);': 'border-bottom-left-radius: var(--brad-beta);'}
-        min-block-size: calc(((100% * ${Math.abs(c2 - c1)}) + (var(--gap-gamma) * ${Math.abs(c2 - c1)})) / 2);
-        min-inline-size: calc(var(--gap-delta) - 2px);
-        translate: calc(100% - 4px) calc(${c2 - c1 < 0 ? '-100% + 2px': '100% - 4px'});
-      }
-
-      .services[data-col2="${c2}"][data-col3="${c3}"] li:nth-child(${nth2[c2 - 1]}):before {
-        content: "";
-        position: absolute;
-        left: 100%;
-        ${c3 - c2 < 0 ? 'bottom: calc(50% + 2px);': 'top: calc(50% + 2px);'}
-        ${c3 - c2 < 0 ? 'border-bottom: 4px solid var(--color-omega);': 'border-top: 4px solid var(--color-omega);'}
-        border-right: 4px solid var(--color-omega);
-        ${c3 - c2 < 0 ? 'border-bottom-right-radius: var(--brad-beta);': 'border-top-right-radius: var(--brad-beta);'}
-        min-block-size: calc(((100% * ${Math.abs(c3 - c2)}) + (var(--gap-gamma) * ${Math.abs(c3 - c2)})) / 2);
-        min-inline-size: calc(var(--gap-delta) - 2px);
-        translate: 0 -2px;
-      }
-
-      .services[data-col2="${c2}"][data-col3="${c3}"] li:nth-child(${nth2[c2 - 1]}):after {
-        content: "";
-        position: absolute;
-        left: 100%;
-        ${c3 - c2 < 0 ? 'bottom: 50%;': 'top: 50%;'}
-        ${c3 - c2 < 0 ? 'border-top: 4px solid var(--color-omega);': 'border-bottom: 4px solid var(--color-omega);'}
-        border-left: 4px solid var(--color-omega);
-        ${c3 - c2 < 0 ? 'border-top-left-radius: var(--brad-beta);': 'border-bottom-left-radius: var(--brad-beta);'}
-        min-block-size: calc(((100% * ${Math.abs(c3 - c2)}) + (var(--gap-gamma) * ${Math.abs(c3 - c2)})) / 2);
-        min-inline-size: calc(var(--gap-delta) - 2px);
-        translate: calc(100% - 4px) calc(${c3 - c2 < 0 ? '-100% + 2px': '100% - 4px'});
-      }
-    `
-  }
-
-  const $s = document.querySelector('.js-services')
-  const $ss = document.querySelector('#services-style')
-
-  if($s && $ss) {
-    const $lis = $s.querySelectorAll('li')
-    const $ul = $s.querySelector('ul')
-
-    let hover = false;
-
-    highlightRandomServices($s)
-
-    const si = setInterval(() => {
-      if(!hover) {
-        highlightRandomServices($s)
-      }
-    }, 4000)
-
-    $lis.forEach(($li, i) => {
-      $li.addEventListener('mouseenter', () => {
-        highlightRandomServices($s, i + 1)
-
-        hover = true
-      })
-    })
-
-    $ul.addEventListener('mouseleave', () => {
-      hover = false
-    })
-  }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
