@@ -1,0 +1,17 @@
+[{
+  "css": "./style.css",
+  "out": "critical.css",
+  "url": "http://127.0.0.1:5522/",
+  "width": 1920,
+  "height": 1800,
+  "keepLargerMediaQueries": true,
+  "strict": false,
+  "blockJSRequests": true,
+  "renderWaitTime": 300,
+  "timeout": 60000,
+  "forceExclude": ["@font-face"],
+  "phantomJsOptions": {
+    "ssl-protocol": "any",
+    "ignore-ssl-errors": true
+  }
+}]

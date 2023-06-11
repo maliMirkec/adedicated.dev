@@ -421,9 +421,22 @@ a:active {
   font-size: 92.5%;
 }
 
-.bottom a {
+.bottom > a {
   display: inline-block;
   margin-block-start: var(--gap-gamma);
+}
+
+.bottom ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-delta);
+  justify-content: center;
+  margin-block-start: var(--gap-gamma);
+}
+
+.bottom li {
+  font-size: 100%;
 }
 
 @media screen and (max-width: 61.1875em) {
@@ -451,7 +464,7 @@ a:active {
   main {
     display: grid;
     grid-template-columns: 1fr var(--width) 1fr;
-    max-inline-size: calc(var(--width) * 1.5);
+    max-inline-size: calc(var(--width) * 1.6);
     margin-inline: auto;
   }
 

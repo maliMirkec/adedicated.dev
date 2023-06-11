@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>A Dedicated Dev</title>
+  <meta name="description" content="Subscribe to monthly web development services.">
+  <style>
+  :root{--color-alpha: hsl(278, 35%, 88%);--color-alpha2: hsl(278, 35%, 95%);--color-beta: hsl(337, 100%, 88%);--color-beta2: hsl(337, 100%, 95%);--color-gamma: hsl(208, 97%, 88%);--color-gamma2: hsl(208, 97%, 95%);--color-omega: #002244;--width: 60rem;--gap-alpha: clamp(4rem, -1.76rem + 19.2vw, 10rem);--gap-beta: clamp(1.25rem, -1.39rem + 8.8vw, 4rem);--gap-gamma: clamp(1rem, 0.04rem + 3.2vw, 2rem);--gap-delta: clamp(0.5rem, 0.02rem + 1.6vw, 1rem);--gap-omega: .25rem;--brad-alpha: clamp(1rem, 0.04rem + 3.2vw, 2rem);--brad-beta: clamp(0.5rem, 0.02rem + 1.6vw, 1rem);--brad-gamma: 0.5rem;--lsp-alpha: .05em;--lsp-beta: .025em;--tra-alpha: 50ms;--tra-beta: 250ms}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:system-ui,sans-serif;background-color:var(--color-gamma2);color:var(--color-omega);margin-inline:auto;padding:var(--gap-omega)}header,section{padding:var(--gap-beta)}.section--alpha,.section--beta{display:grid;gap:var(--gap-gamma);margin-block-end:var(--gap-beta)}.section--alpha{grid-column:2 / span 1;border-radius:var(--brad-alpha);box-shadow:var(--gap-omega) var(--gap-omega) 0 0 currentColor}.section--alpha:nth-of-type(2n+1){background-color:var(--color-alpha)}.section--beta{grid-column:1 / span 3;padding-block:var(--gap-beta)}h1,h2{font-weight:100;font-size:clamp(2.5rem,0.1rem + 8vw,5rem);line-height:1;letter-spacing:var(--lsp-beta);text-wrap:balance}h1::first-letter,h2::first-letter{font-weight:700}.section--alpha:nth-of-type(2n+1) h1::first-letter{text-shadow:var(--gap-omega) var(--gap-omega) 0 var(--color-beta)}.section--beta h2::first-letter{text-shadow:var(--gap-omega) var(--gap-omega) 0 var(--color-alpha)}li,p{font-size:clamp(1rem,0.76rem + 0.8vw,1.25rem);line-height:1.66}ul{list-style-position:inside}img{display:block;max-inline-size:100%;height:auto}a{color:inherit;text-decoration:none}.button{display:inline-flex;font-size:125%;font-weight:700;line-height:1;letter-spacing:var(--lsp-alpha);background-color:var(--color-beta);padding:var(--gap-delta) var(--gap-gamma);border:.125rem solid currentColor;border-radius:var(--brad-beta);box-shadow:var(--gap-omega) var(--gap-omega) 0 0 var(--color-gamma)}.top>a{display:flex;justify-content:center}.top ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--gap-gamma);margin-block-start:var(--gap-gamma)}.top li a{display:block;padding:var(--gap-omega) var(--gap-delta);border:.125rem solid var(--color-gamma);border-radius:var(--brad-gamma)}.hero{justify-items:start}.examples ul{list-style:none;display:grid;margin-block-start:var(--gap-beta)}.examples img{inline-size:100%}.faq details p{font-size:100%;padding:var(--gap-delta)}@media screen and (max-width:61.1875em){.examples ul{gap:var(--gap-gamma)}}@media screen and (min-width:61.25em){main{display:grid;grid-template-columns:1fr var(--width) 1fr;max-inline-size:calc(var(--width) * 1.6);margin-inline:auto}.section--beta>h2,.section--beta>p{max-inline-size:calc(var(--width) + (var(--gap-beta) * -2));inline-size:100%;margin-inline:auto}.examples ul{grid-template-columns:repeat(12,1fr)}.examples li{grid-row:1;transform-origin:center}.examples li:nth-of-type(1){grid-column:1 / span 6;rotate:-6deg}.examples li:nth-of-type(2){grid-column:4 / span 6;translate:0 2%;rotate:-4deg}.examples li:nth-of-type(3){grid-column:7 / span 6;translate:0 4%;rotate:-2deg}}
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffafcc">
+  <meta name="msapplication-TileColor" content="#ffafcc">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <header class="top">
     <a href="/">
       <img src="logo.svg" alt="Home" width="299" height="45">
     </a>
-    <nav role="Main">
+    <nav aria-label="Main">
       <ul>
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="#services">Services</a></li>
@@ -23,7 +33,9 @@
   </header>
   <main>
     <section class="hero section--alpha">
-      <img srcset="hero-2x.png 2x, hero.png" src="hero.png" alt="Illustration showing a person sitting and thinking next to laptop with open web browser.">
+      <picture>
+        <img sizes="(min-width: 30em) 30em, 100vw" srcset="https://res.cloudinary.com/starbist/image/upload/w_320,f_auto,q_auto/v1686466299/hero-2x_arixi9.png 320w, https://res.cloudinary.com/starbist/image/upload/w_480,f_auto,q_auto/v1686466299/hero-2x_arixi9.png 480w, https://res.cloudinary.com/starbist/image/upload/w_960,f_auto,q_auto/v1686466299/hero-2x_arixi9.png 960w" src="https://res.cloudinary.com/starbist/image/upload/w_480,f_auto,q_auto/v1686466299/hero-2x_arixi9.png" alt="Illustration showing a person sitting and thinking next to laptop with open web browser." width="480" height="207">
+      </picture>
       <h1>Web development reinvented</h1>
       <p>Subscribe to monthly web development services.</p>
       <a class="button" href="#subscribe">See plans</a>
@@ -32,19 +44,37 @@
       <h2>Your website as slick as these</h2>
       <p>Modern, responsive, optimized — just slick.</p>
       <ul>
-        <li><img srcset="wundermobility-2x.png 2x, wundermobility.png" src="wundermobility.png" alt="Screenshot of Wunder Mobility website."></li>
-        <li><img srcset="dominodatalab-2x.png 2x, dominodatalab.png" src="dominodatalab.png" alt="Screenshot of Domino Data Lab website."></li>
-        <li><img srcset="creditcardinsider-2x.png 2x, creditcardinsider.png" src="creditcardinsider.png" alt="Screenshot of Credit Card Insider website."></li>
+        <li>
+          <picture>
+            <img sizes="(max-width: 50em) 50em, 100vw"
+            srcset="https://res.cloudinary.com/starbist/image/upload/w_320,f_auto/v1686466300/wundermobility-2x_fhui60.png 320w, https://res.cloudinary.com/starbist/image/upload/w_700,f_auto/v1686466300/wundermobility-2x_fhui60.png 700w, https://res.cloudinary.com/starbist/image/upload/w_1400,f_auto/v1686466300/wundermobility-2x_fhui60.png 1400w" src="https://res.cloudinary.com/starbist/image/upload/w_700,f_auto/v1686466300/wundermobility-2x_fhui60.png" alt="Screenshot of Wunder Mobility website." width="704" height="465">
+          </picture>
+          </li>
+        <li>
+          <picture>
+            <img sizes="(max-width: 960px) 100vw, 960px"
+            srcset="https://res.cloudinary.com/starbist/image/upload/w_320,f_auto/v1686466300/dominodatalab-2x_msxnrj.png 320w, https://res.cloudinary.com/starbist/image/upload/w_700,f_auto/v1686466300/dominodatalab-2x_msxnrj.png 700w, https://res.cloudinary.com/starbist/image/upload/w_1400,f_auto/v1686466300/dominodatalab-2x_msxnrj.png 1400w" src="https://res.cloudinary.com/starbist/image/upload/w_700,f_auto/v1686466300/dominodatalab-2x_msxnrj.png" alt="Screenshot of Credit Card Insider website." width="704" height="465">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <img sizes="(max-width: 960px) 100vw, 960px"
+            srcset="https://res.cloudinary.com/starbist/image/upload/w_320,f_auto/v1686466299/creditcardinsider-2x_t9o3mk.png 320w, https://res.cloudinary.com/starbist/image/upload/w_800,f_auto/v1686466299/creditcardinsider-2x_t9o3mk.png 800w, https://res.cloudinary.com/starbist/image/upload/w_1400,f_auto/v1686466299/creditcardinsider-2x_t9o3mk.png 1400w" src="https://res.cloudinary.com/starbist/image/upload/w_800,f_auto/v1686466299/creditcardinsider-2x_t9o3mk.png" alt="Screenshot of Credit Card Insider website." width="704" height="465">
+          </picture>
+        </li>
       </ul>
     </section>
     <section class="how-it-works section--alpha" id="how-it-works">
       <h2>How it works</h2>
+      <p>Rent a developer and start adding your requests immediately.</p>
       <ol>
-        <li>Create a request.</li>
-        <li>Split the request into smaller tasks.</li>
+        <li>Choose a subscription.</li>
+        <li>Create a request which is converted into smaller tasks.</li>
         <li>Relax and see every task resolved in a timely fashion.</li>
       </ol>
-      <img srcset="how-it-works-2x.png 2x, how-it-works.png" src="how-it-works.png" alt="Illustration showing two persons in front of a big monitor. The first person is touching a big “plus” sign. The other person is holding an item which could be related to other two items on the screen. Altoghether seems like they are work on a tasks list.">
+      <picture>
+        <img sizes="(min-width: 30em) 30em, 100vw" srcset="https://res.cloudinary.com/starbist/image/upload/w_320,f_auto,q_auto/v1686466299/how-it-works-2x_elz6sg.png 320w, https://res.cloudinary.com/starbist/image/upload/w_480,f_auto,q_auto/v1686466299/how-it-works-2x_elz6sg.png 480w, https://res.cloudinary.com/starbist/image/upload/w_960,f_auto,q_auto/v1686466299/how-it-works-2x_elz6sg.png 960w" src="https://res.cloudinary.com/starbist/image/upload/w_480,f_auto,q_auto/v1686466299/how-it-works-2x_elz6sg.png" alt="Illustration showing two persons in front of a big monitor. The first person is touching a big “plus” sign. The other person is holding an item which could be related to other two items on the screen. Altoghether seems like they are work on a tasks list." width="480" height="262">
+      </picture>
     </section>
     <section class="services section--beta js-services" id="services" data-col1="2" data-col2="3" data-col3="4">
       <h2>Templates, layouts, components, and more</h2>
@@ -134,10 +164,10 @@
       <p>Choose a plan that fits your needs.</p>
       <ul>
         <li>
-          <h3>1-month package</h3>
+          <h3>1-month subscription</h3>
           <p>When you cannot commit for a period longer than one month. <br>Full price payment.</p>
-          <h4>$3,999/m</h4>
-          <a class="button button--alpha" href="#get-started">Get started</a>
+          <h4>€3,999/m</h4>
+          <a class="button button--alpha" href="https://buy.stripe.com/9AQ2bx1L1anG6w83cj">Get started</a>
           <p>You get:</p>
           <ul>
             <li>one request at a time</li>
@@ -149,10 +179,10 @@
           </ul>
         </li>
         <li>
-          <h3>3-month package</h3>
+          <h3>3-months subscription</h3>
           <p>When you cannot commit for a period longer than three months. <br>You save $250 each month.</p>
-          <h4>$3,749/m</h4>
-          <a class="button button--alpha" href="#get-started">Get started</a>
+          <h4>€3,749/m</h4>
+          <a class="button button--alpha" href="https://buy.stripe.com/7sI2bx9dtdzS5s49AF">Get started</a>
           <p>You get:</p>
           <ul>
             <li>one request at a time</li>
@@ -163,10 +193,10 @@
           </ul>
         </li>
         <li>
-          <h3>6-month package</h3>
+          <h3>6-months subscription</h3>
           <p>When you cannot commit for a period longer than six months. <br>You save $500 each month.</p>
-          <h4>$3,499/m</h4>
-          <a class="button button--alpha" href="#get-started">Get started</a>
+          <h4>€3,499/m</h4>
+          <a class="button button--alpha" href="https://buy.stripe.com/28oeYjgFVgM407K9AG">Get started</a>
           <p>You get:</p>
           <ul>
             <li>one request at a time</li>
@@ -259,11 +289,22 @@
   </main>
   <footer class="bottom">
     <p>&copy; 2023, A Dedicated Dev; Osijek, Croatia</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#examples">Projects</a></li>
+        <li><a href="#subscribe">Get started</a></li>
+        <li><a href="mailto:me@silvestar.codes?subject=A%20dedicated%20dev%20">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="https://billing.stripe.com/p/login/bIYaGR8JH6qx85abII">Client login</a></li>
+      </ul>
+    </nav>
     <a href="/">
       <img src="logo.svg" alt="Home" width="299" height="45">
     </a>
   </footer>
   <style id="services-style"></style>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" media="print" onload='this.media="all"'>
 </body>
 </html>
