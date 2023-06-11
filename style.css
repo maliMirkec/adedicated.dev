@@ -15,6 +15,7 @@
   --brad-alpha: clamp(1rem, 0.04rem + 3.2vw, 2rem);
   --brad-beta: clamp(0.5rem, 0.02rem + 1.6vw, 1rem);
   --brad-gamma: 0.5rem;
+  --brad-omega: 50%;
   --lsp-alpha: .05em;
   --lsp-beta: .025em;
   --tra-alpha: 50ms;
@@ -271,8 +272,7 @@ a:active {
 }
 
 .benefits img {
-  inline-size: var(--gap-beta);
-  border-radius: var(--brad-alpha);
+  border-radius: var(--brad-omega);
   box-shadow: var(--gap-omega) var(--gap-omega) 0 0 var(--color-beta);
   margin-block-end: var(--gap-delta);
 }
