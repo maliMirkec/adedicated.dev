@@ -334,7 +334,7 @@ a:active {
 
 .subscribe > ul > li {
   display: grid;
-  grid-template-rows: auto 6em auto auto;
+  grid-template-rows: auto 4em auto auto;
   gap: var(--gap-omega);
   align-content: start;
   place-items: start;
